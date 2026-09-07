@@ -218,6 +218,23 @@
       event.preventDefault();
       toggleSidebar();
     }
+    if (
+      (isMac ? event.metaKey : event.ctrlKey) &&
+      !event.altKey &&
+      !event.shiftKey &&
+      event.code === "KeyJ"
+    ) {
+      event.preventDefault();
+      if (backgroundPanel.hidden) {
+        backgroundPanel.hidden = false;
+        backgroundLauncher.setAttribute("aria-expanded", "true");
+        closeOptions();
+        backgroundPanel.querySelector('[data-background-question]').focus();
+      } else {
+        closeBackground(true);
+      }
+      return;
+    }
     if (event.key === "Escape" && !backgroundPanel.hidden) {
       event.preventDefault();
       closeBackground(true);

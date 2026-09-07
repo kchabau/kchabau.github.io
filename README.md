@@ -39,6 +39,7 @@ Keyboard shortcuts:
 
 - **Cmd+B** (Mac) / **Ctrl+B** (Windows/Linux): collapse or expand the desktop sidebar.
 - **Shift+Cmd+L** (Mac) / **Shift+Ctrl+L** (Windows/Linux): toggle light and dark mode.
+- **Cmd+J** (Mac) / **Ctrl+J** (Windows/Linux): open or close the prepared Ask about Kevin panel.
 - **Esc**: close an open menu or panel.
 
 ## Background panel
