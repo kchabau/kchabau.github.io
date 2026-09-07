@@ -1,0 +1,25 @@
+@page { size: auto; margin: 18mm; }
+@media print {
+  :root { --text: #111; --muted: #555; --border: #ccc; }
+  body { background: white; color: #111; font-size: 10pt; line-height: 1.55; }
+  .sidebar, .page-header, .skip-link, .sr-only, button, .document-links, .document-footer { display: none !important; }
+  .content-shell { margin: 0; }
+  .page-shell { max-width: none; padding: 0; margin: 0; }
+  .document-icon { font-size: 24pt; margin-bottom: 12pt; }
+  h1 { font-size: 28pt; }
+  .page-description { font-size: 12pt; }
+  h1, h2, h3, summary, .project-meta > span { break-after: avoid; }
+  p, li { orphans: 3; widows: 3; }
+  .project-item, .role-block { break-inside: auto; }
+  .project-meta, .diagram, .meta-block, .skills-group, tr { break-inside: avoid; }
+  details > * { display: block !important; }
+  details::details-content { display: block; content-visibility: visible; }
+  .project-content { padding-left: 0; }
+  .diagram { display: flex !important; }
+  summary { list-style: none; padding-left: 0 !important; }
+  summary::marker { content: ''; }
+  a { color: #354526; text-decoration: underline; }
+  .tag { background: transparent; border: 1px solid #ddd; }
+  .contact-item { gap: 12pt; }
+  pre { white-space: pre-wrap; }
+}

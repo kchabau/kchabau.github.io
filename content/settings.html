@@ -1,0 +1,39 @@
+<div class="document-icon" aria-hidden="true">⚙</div>
+<h1 tabindex="-1">Settings</h1>
+<p class="page-description">Make this workspace comfortable to read.</p>
+<p class="intro">Choose your appearance and heading styles. Changes apply across the portfolio and are saved in this browser.</p>
+<section class="section-block preference-controls" aria-labelledby="appearance-title">
+  <h2 id="appearance-title">Appearance</h2>
+  <div class="setting-row"><div><h3 id="theme-label">Color theme</h3><p>Choose a workspace color theme.</p></div><select class="theme-select" data-theme-select aria-label="Choose color theme"><option value="light">Light</option><option value="dark">Dark</option><option value="warm">Warm</option><option value="forest">Forest</option><option value="slate">Slate</option></select></div>
+  <div class="setting-row"><div><h3 id="dark-mode-label">Dark mode shortcut</h3><p>Use the shortcut or switch directly between light and dark.</p></div><button type="button" class="theme-switch" role="switch" aria-checked="false" aria-labelledby="dark-mode-label" data-theme-toggle><span aria-hidden="true"></span></button></div>
+  <h2>Reading</h2>
+  <p>Use Small text for compact reading, or Full width to let the document use the available space.</p>
+  {{READING_CONTROLS}}
+  <h2>Heading styles</h2>
+  <p>Choose a typeface for each heading level. Every matching heading across the site changes immediately, including the previews below. Default and Sans serif use the same typeface.</p>
+  <div class="heading-setting"><div class="setting-row"><label for="heading-1">Heading 1 <span class="meta-label">H1</span></label><select id="heading-1" data-heading-style="1"><option value="default">Default</option><option value="sans">Sans serif</option><option value="serif">Serif</option><option value="mono">Monospace</option></select></div><p class="heading-preview" data-heading-preview="1">Reliable data. Clear thinking.</p></div>
+  <div class="heading-setting"><div class="setting-row"><label for="heading-2">Heading 2 <span class="meta-label">H2</span></label><select id="heading-2" data-heading-style="2"><option value="default">Default</option><option value="sans">Sans serif</option><option value="serif">Serif</option><option value="mono">Monospace</option></select></div><p class="heading-preview" data-heading-preview="2">Reliable data. Clear thinking.</p></div>
+  <div class="heading-setting"><div class="setting-row"><label for="heading-3">Heading 3 <span class="meta-label">H3</span></label><select id="heading-3" data-heading-style="3"><option value="default">Default</option><option value="sans">Sans serif</option><option value="serif">Serif</option><option value="mono">Monospace</option></select></div><p class="heading-preview" data-heading-preview="3">Reliable data. Clear thinking.</p></div>
+  <div class="heading-setting"><div class="setting-row"><label for="heading-4">Heading 4 <span class="meta-label">H4</span></label><select id="heading-4" data-heading-style="4"><option value="default">Default</option><option value="sans">Sans serif</option><option value="serif">Serif</option><option value="mono">Monospace</option></select></div><p class="heading-preview" data-heading-preview="4">Reliable data. Clear thinking.</p></div>
+  <button type="button" class="reset-preferences" data-reset-preferences>Reset appearance</button>
+  <p class="meta-label">Restores light mode, default heading styles, and default reading controls.</p>
+</section>
+<noscript><p class="callout">Enable JavaScript to customize appearance.</p></noscript>
+<section class="section-block" aria-labelledby="workspace-shortcuts">
+  <h2 id="workspace-shortcuts">Keyboard shortcuts</h2>
+  <div class="shortcut-list">
+    <article class="shortcut-row">
+      <div><h3>Collapse or expand the sidebar</h3><p>Switch between the full navigation and the compact icon rail. Available on desktop; your logo and page icons remain visible when collapsed.</p></div>
+      <dl class="shortcut-keys"><dt>Mac</dt><dd><kbd>Cmd</kbd> + <kbd>B</kbd></dd><dt>Windows / Linux</dt><dd><kbd>Ctrl</kbd> + <kbd>B</kbd></dd></dl>
+    </article>
+    <article class="shortcut-row">
+      <div><h3>Toggle light and dark mode</h3><p>Change the workspace appearance. Your theme preference is remembered in this browser when storage is available.</p></div>
+      <dl class="shortcut-keys"><dt>Mac</dt><dd><kbd>Shift</kbd> + <kbd>Cmd</kbd> + <kbd>L</kbd></dd><dt>Windows / Linux</dt><dd><kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>L</kbd></dd></dl>
+    </article>
+    <article class="shortcut-row">
+      <div><h3>Close the mobile menu</h3><p>Dismiss the expanded mobile navigation and return keyboard focus to the Menu button.</p></div>
+      <dl class="shortcut-keys"><dt>All platforms</dt><dd><kbd>Esc</kbd></dd></dl>
+    </article>
+  </div>
+</section>
+<p class="callout">PDF exports always use light styling, regardless of your current theme. Open the three-dot menu at the top of any page and choose Export page as PDF to print that document.</p>
