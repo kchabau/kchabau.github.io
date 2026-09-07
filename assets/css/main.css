@@ -104,7 +104,7 @@ table { width: 100%; border-collapse: collapse; } td, th { padding: 10px; text-a
  .content-shell { margin-left: 0; } .page-header { height: 54px; padding: 0 22px; font-size: 11px; }
  .breadcrumb { gap: 9px; }
  .page-shell { padding: 34px 24px 24px; } .page-description { font-size: 16px; }
- .document-icon { font-size: 30px; margin-bottom: 15px; } .profile-portrait { width: 210px; height: 210px; margin-bottom: 28px; } .meta-grid { gap: 20px; }
+ .document-icon { font-size: 30px; margin-bottom: 15px; } .profile-portrait { width: 132px; height: 132px; margin-bottom: 24px; } .meta-grid { gap: 20px; }
  .skills-group { grid-template-columns: 1fr; gap: 10px; } .role-header { display: block; margin-bottom: 14px; }
  .project-content { padding-left: 10px; } .document-footer { margin-top: 44px; }
 }
