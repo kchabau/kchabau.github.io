@@ -43,6 +43,8 @@ nav { display: grid; gap: 4px; }
 h1 { font-size: clamp(34px, 4vw, 43px); letter-spacing: -.045em; line-height: 1.2; margin: 0 0 18px; font-weight: 650; }
 h1:focus { outline: none; }
 .page-description { max-width: 680px; color: #66685e; font-size: 18px; line-height: 1.65; margin: 0 0 30px; }
+.profile-portrait { width: 260px; height: 260px; margin: 0 auto 34px; border-radius: 50%; overflow: hidden; border: 1px solid var(--border); background: var(--sidebar-bg); }
+.profile-portrait img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 35%; }
 p { margin: 0 0 18px; }
 .intro { color: #606157; }
 h2 { font-size: 18px; line-height: 1.5; letter-spacing: -.02em; font-weight: 600; margin: 0 0 12px; }
@@ -102,7 +104,7 @@ table { width: 100%; border-collapse: collapse; } td, th { padding: 10px; text-a
  .content-shell { margin-left: 0; } .page-header { height: 54px; padding: 0 22px; font-size: 11px; }
  .breadcrumb { gap: 9px; }
  .page-shell { padding: 34px 24px 24px; } .page-description { font-size: 16px; }
- .document-icon { font-size: 30px; margin-bottom: 15px; } .meta-grid { gap: 20px; }
+ .document-icon { font-size: 30px; margin-bottom: 15px; } .profile-portrait { width: 210px; height: 210px; margin-bottom: 28px; } .meta-grid { gap: 20px; }
  .skills-group { grid-template-columns: 1fr; gap: 10px; } .role-header { display: block; margin-bottom: 14px; }
  .project-content { padding-left: 10px; } .document-footer { margin-top: 44px; }
 }
