@@ -63,11 +63,17 @@ python3 scripts/check.py
 git diff --check
 ```
 
+## Codex guidance
+
+`AGENTS.md` contains repository-wide instructions for coding agents. The repo-local Codex skill at `.codex/skills/portfolio-site/SKILL.md` describes the site structure, where to edit its sources, and how to preview it locally.
+
 ## Repository structure
 
 - `content/`: editable page fragments and `background.json` answers.
 - `scripts/build.py`: generates the shared production shell and route pages.
 - `scripts/check.py`: validates route structure, metadata, assets, IDs, and links.
+- `AGENTS.md`: repository guidance for coding agents.
+- `.codex/skills/portfolio-site/SKILL.md`: reusable Codex guidance for editing and previewing this site.
 - `assets/css/main.css`: screen styles, design tokens, responsive layout, and controls.
 - `assets/css/print.css`: print and PDF rules.
 - `assets/js/main.js`: progressive enhancement and interactive behavior.

@@ -18,3 +18,5 @@ env/
 
 # Optional tooling cache
 node_modules/
+
+improvement-log.md
