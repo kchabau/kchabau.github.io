@@ -2,6 +2,7 @@
 from pathlib import Path
 from html import escape
 import json
+import hashlib
 
 ROOT = Path(__file__).resolve().parent.parent
 PAGES = {
@@ -57,6 +58,7 @@ def background_panel():
 
 def render(route):
     name, _, description = PAGES[route]
+    css_version = hashlib.sha256((ROOT / 'assets/css/main.css').read_bytes()).hexdigest()[:12]
     title = 'Kevin Chabau — ' + ('Analytics Engineer' if route == 'about' else name)
     nav = '\n'.join(f'<a href="/{key}" class="nav-item" title="{value[0]}"'+(' aria-current="page"' if key == route else '')+f'><span class="nav-icon" aria-hidden="true">{value[1]}</span><span class="nav-text">{value[0]}</span></a>' for key, value in PAGES.items())
     content = (ROOT / 'content' / f'{route}.html').read_text().replace('{{READING_CONTROLS}}', reading_controls('settings'))
@@ -71,7 +73,7 @@ def render(route):
   <meta property="og:description" content="{escape(description, quote=True)}">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://kchabau.github.io/{route}">
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/main.css?v={css_version}">
   <link rel="stylesheet" href="/assets/css/print.css" media="print">
   <script src="/assets/js/main.js" defer></script>
 </head>
